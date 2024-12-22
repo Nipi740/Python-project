@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HollyMovies</title>
+</head>
+<body>
+    <h1>Movies</h1>
+    <ul>
+        {% for movie in movies %}
+            <li>
+                {{ movie.title }} ({{ movie.released.year }}) - {{ movie.genre.name }}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
